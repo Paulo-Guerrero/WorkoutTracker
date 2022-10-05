@@ -12,8 +12,8 @@ public class SignUpView extends PageView implements ActionListener {
     public void renderView(){
         this.panel.removeAll();
 
-        JTextField username = new JTextField();
-        JPasswordField password = new JPasswordField();
+        JTextField username = new JTextField(10);
+        JPasswordField password = new JPasswordField(10);
         JButton signUp = new JButton("Sign Up");
         signUp.addActionListener(this);
         this.panel.add(username);

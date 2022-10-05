@@ -7,8 +7,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LoginView extends PageView implements ActionListener {
-    JTextField username = new JTextField();
-    JPasswordField password = new JPasswordField();
+    JTextField username = new JTextField(10);
+    JPasswordField password = new JPasswordField(10);
     JButton login = new JButton("Log In");
     JLabel loginError = new JLabel("Incorrect username or password");
     private UserController userController = new UserController();

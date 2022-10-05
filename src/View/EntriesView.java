@@ -32,7 +32,7 @@ public class EntriesView extends PageView implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == addRecord){
             this.panel.add(new JComboBox(liftController.getLifts()));
-            this.panel.add(new JTextField());
+            this.panel.add(new JTextField(10));
             this.panel.revalidate();
         } else if (e.getSource() == homeButton){
             HomePageView homePageView = new HomePageView(this.frame, this.panel);
