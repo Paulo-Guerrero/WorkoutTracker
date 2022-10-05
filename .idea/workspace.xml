@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caec9342-4b6c-450e-be45-78a3772597ab" name="Changes" comment="Database util for executing queries">
-      <change afterPath="$PROJECT_DIR$/src/View/PageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/EntryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/LiftController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/EntryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EntryModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/EntriesView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/EntriesView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/HomePageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/HomePageView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/LoginView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/SignUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/SignUpView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +34,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="AppRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller.AppRunner" />
