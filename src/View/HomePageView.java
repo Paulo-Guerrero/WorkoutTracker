@@ -7,16 +7,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 
-public class HomePageView implements ActionListener {
-    JFrame frame;
-    JPanel panel;
+public class HomePageView extends PageView implements ActionListener {
     JButton entryButton;
     UserController user = new UserController();
     private JLabel welcomeHeader;
-    public HomePageView(JFrame frame, JPanel panel){
-        this.frame = frame;
-        this.panel = panel;
+
+    public HomePageView(JFrame frame, JPanel panel) {
+        super(frame, panel);
     }
+
     public void renderView(){
         this.panel.removeAll();
 

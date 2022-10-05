@@ -6,18 +6,17 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LoginView implements ActionListener {
-    private JFrame frame;
-    private JPanel panel;
+public class LoginView extends PageView implements ActionListener {
     JTextField username = new JTextField();
     JPasswordField password = new JPasswordField();
     JButton login = new JButton("Log In");
     JLabel loginError = new JLabel("Incorrect username or password");
     private UserController userController = new UserController();
-    public LoginView(JFrame frame, JPanel panel){
-        this.frame = frame;
-        this.panel = panel;
+
+    public LoginView(JFrame frame, JPanel panel) {
+        super(frame, panel);
     }
+
 
     public void renderView(){
         this.panel.removeAll();

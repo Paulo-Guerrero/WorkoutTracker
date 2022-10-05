@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caec9342-4b6c-450e-be45-78a3772597ab" name="Changes" comment="App controller and runner">
-      <change afterPath="$PROJECT_DIR$/src/View/EntriesView.java" afterDir="false" />
+    <list default="true" id="caec9342-4b6c-450e-be45-78a3772597ab" name="Changes" comment="Database util for executing queries">
+      <change afterPath="$PROJECT_DIR$/src/View/PageView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/LiftModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/LiftModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/EntriesView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/EntriesView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/HomePageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/HomePageView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/LoginView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/SignUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/SignUpView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/StartUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/StartUpView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664907251456</updated>
-      <workItem from="1664907253831" duration="9964000" />
+      <workItem from="1664907253831" duration="12945000" />
     </task>
     <task id="LOCAL-00001" summary="Miscellaneous creation files">
       <created>1664914525051</created>
@@ -104,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664914683412</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Login base views and controller">
+      <created>1664979128049</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664979128050</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Database util for executing queries">
+      <created>1664985193535</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664985193535</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +149,8 @@
     <MESSAGE value="Sign up and login views basics" />
     <MESSAGE value="Model and controller foundation" />
     <MESSAGE value="App controller and runner" />
-    <option name="LAST_COMMIT_MESSAGE" value="App controller and runner" />
+    <MESSAGE value="Login base views and controller" />
+    <MESSAGE value="Database util for executing queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Database util for executing queries" />
   </component>
 </project>
