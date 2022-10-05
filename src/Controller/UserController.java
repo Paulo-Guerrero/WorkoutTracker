@@ -2,12 +2,29 @@ package Controller;
 
 import Model.UserModel;
 
+import java.awt.*;
+import java.util.HashMap;
+import java.util.List;
+
 public class UserController {
-    public UserModel user = new UserModel();
+    private UserModel user = new UserModel();
+    private int currentUserId;
     public boolean login(String username, String password){
         if (user.verifyLogin(username, password)){
+            this.currentUserId = user.getUserId(username);
             return true;
         }
         return false;
+    }
+
+    public String getUsername(){
+        return user.getUsername(this.currentUserId);
+    }
+
+    public HashMap<String, Object> getLatestPersonalBest(){
+        HashMap map = new HashMap<>();
+        map.put("Lift", "Bench Press");
+        map.put("Measurement", 225);
+        return map;
     }
 }

@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caec9342-4b6c-450e-be45-78a3772597ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WorkoutTracker.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AppRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/EntryModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/LiftModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/HomePageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/LoginView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/SignUpView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/StartUpView.java" afterDir="false" />
+    <list default="true" id="caec9342-4b6c-450e-be45-78a3772597ab" name="Changes" comment="App controller and runner">
+      <change afterPath="$PROJECT_DIR$/src/View/EntriesView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/LiftModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/LiftModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/HomePageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/HomePageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/LoginView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/LoginView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/SignUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/SignUpView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/StartUpView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/StartUpView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +74,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664907251456</updated>
-      <workItem from="1664907253831" duration="5034000" />
+      <workItem from="1664907253831" duration="9964000" />
     </task>
+    <task id="LOCAL-00001" summary="Miscellaneous creation files">
+      <created>1664914525051</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664914525051</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Sign up and login views basics">
+      <created>1664914577697</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664914577697</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Model and controller foundation">
+      <created>1664914669368</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664914669368</updated>
+    </task>
+    <task id="LOCAL-00004" summary="App controller and runner">
+      <created>1664914683412</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664914683412</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,10 +115,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Miscellaneous creation files" />
+    <MESSAGE value="Sign up and login views basics" />
+    <MESSAGE value="Model and controller foundation" />
+    <MESSAGE value="App controller and runner" />
+    <option name="LAST_COMMIT_MESSAGE" value="App controller and runner" />
   </component>
 </project>

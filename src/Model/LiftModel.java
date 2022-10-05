@@ -3,7 +3,7 @@ package Model;
 import java.util.HashMap;
 import java.time.LocalDate;
 
-public abstract class LiftModel {
+public class LiftModel {
     protected String name;
     protected double measure;
     protected double personalBest;

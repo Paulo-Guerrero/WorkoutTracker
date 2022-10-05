@@ -8,11 +8,11 @@ import java.awt.event.ActionListener;
 public class StartUpView implements ActionListener {
     private JFrame frame = new JFrame();
     private JPanel panel = new JPanel();
-
+    private JButton signupButton = new JButton("Sign Up");
+    private JButton loginButton = new JButton("Log In");
+    
     public void renderView(){
-        JButton loginButton = new JButton("Log In");
         loginButton.addActionListener(this);
-        JButton signupButton = new JButton("Sign Up");
         signupButton.addActionListener(this);
 
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 30, 30));
@@ -21,13 +21,20 @@ public class StartUpView implements ActionListener {
 
         frame.add(panel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.setSize(1000, 700);
         frame.setVisible(true);
         frame.setTitle("Workout Tracker v0.01");
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        SignUpView signUpView = new SignUpView(this.frame, this.panel);
-        signUpView.renderView();
+        if (e.getSource() == signupButton) {
+            SignUpView signUpView = new SignUpView(this.frame, this.panel);
+            signUpView.renderView();
+        } else if (e.getSource() == loginButton) {
+            LoginView loginView = new LoginView(this.frame, this.panel);
+            loginView.renderView();
+        }
     }
 }
