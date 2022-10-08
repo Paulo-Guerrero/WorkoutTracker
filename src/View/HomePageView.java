@@ -1,6 +1,7 @@
 package View;
 
 import Controller.Controllers;
+import Controller.LiftController;
 import Controller.UserController;
 
 import javax.swing.*;
@@ -12,6 +13,7 @@ public class HomePageView extends PageView implements ActionListener {
     JButton entryButton;
     JButton logoutButton;
     UserController user = this.controllers.userController;
+    LiftController liftController = this.controllers.liftController;
     private JLabel welcomeHeader;
 
     public HomePageView(JFrame frame, JPanel panel, Controllers controllers) {
@@ -48,7 +50,7 @@ public class HomePageView extends PageView implements ActionListener {
     }
 
     public void renderPersonalBests(){
-        HashMap map = this.user.getLatestPersonalBest();
+        HashMap map = this.liftController.getLatestPersonalBest();
         String lift = map.get("Lift").toString();
         int measurement = (int) map.get("Measurement");
 

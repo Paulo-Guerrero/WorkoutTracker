@@ -36,11 +36,4 @@ public class UserController {
     }
 
     public int getCurrentUserId(){return this.currentUserId;}
-
-    public HashMap<String, Object> getLatestPersonalBest(){
-        HashMap map = new HashMap<>();
-        map.put("Lift", "Bench Press");
-        map.put("Measurement", 225);
-        return map;
-    }
 }
