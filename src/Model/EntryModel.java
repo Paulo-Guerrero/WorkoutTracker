@@ -25,11 +25,11 @@ public class EntryModel {
         }
     }
 
-    public void addBlankEntry(int userId){
+    public int addBlankEntry(int userId){
         String currDate = LocalDate.now().toString();
         currDate = formatSQLString(currDate);
         String query = "INSERT INTO Entries(creationDate, userId) VALUES(" + currDate + "," + userId + ")";
-        db.executeUpdate(query);
+        return db.executeUpdate(query);
     }
 
     public String formatSQLString(String sqlString){

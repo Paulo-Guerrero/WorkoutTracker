@@ -2,10 +2,10 @@ package Controller;
 
 import Model.LiftModel;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class LiftController {
-    private String[] lifts = {"Squat", "Deadlift", "Bench Press"};
     private Controllers controllers;
     private LiftModel lift = new LiftModel();
     private UserController userController;
@@ -25,5 +25,10 @@ public class LiftController {
 
     public String[] getLifts(){
         return lift.getLifts();
+    }
+
+    public ArrayList<HashMap<String, Object>> getUserLifts(String currDate){
+        int userId = userController.getCurrentUserId();
+        return lift.getUserLifts(userId, currDate);
     }
 }

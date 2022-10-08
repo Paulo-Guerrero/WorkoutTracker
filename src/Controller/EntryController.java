@@ -14,8 +14,8 @@ public class EntryController {
         return entry.getUserEntryDates(controllers.userController.getCurrentUserId());
     }
 
-    public void addBlankEntry(){
+    public int addBlankEntry(){
         int userId = controllers.userController.getCurrentUserId();
-        entry.addBlankEntry(userId);
+        return entry.addBlankEntry(userId);
     }
 }

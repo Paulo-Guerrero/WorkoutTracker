@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="caec9342-4b6c-450e-be45-78a3772597ab" name="Changes" comment="HistoryGraph initialization">
+    <list default="true" id="caec9342-4b6c-450e-be45-78a3772597ab" name="Changes" comment="Unique constraint on Entry Dates&#10;Null check for PB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EntryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EntryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LiftController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/EntryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/EntryModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/LiftModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/LiftModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/EntriesView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/EntriesView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/EntryPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/EntryPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/HomePageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/HomePageView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +91,7 @@
       <workItem from="1665011378371" duration="604000" />
       <workItem from="1665184642409" duration="5254000" />
       <workItem from="1665195802439" duration="8153000" />
-      <workItem from="1665242639800" duration="4888000" />
+      <workItem from="1665242639800" duration="7660000" />
     </task>
     <task id="LOCAL-00001" summary="Miscellaneous creation files">
       <created>1664914525051</created>
@@ -214,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665245534801</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Unique constraint on Entry Dates&#10;Null check for PB">
+      <created>1665248378589</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665248378589</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +274,7 @@
     <MESSAGE value="Saving entries connected to database&#10;Added EntryPanel class" />
     <MESSAGE value="Connected LiftModel to db" />
     <MESSAGE value="HistoryGraph initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="HistoryGraph initialization" />
+    <MESSAGE value="Unique constraint on Entry Dates&#10;Null check for PB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unique constraint on Entry Dates&#10;Null check for PB" />
   </component>
 </project>

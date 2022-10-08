@@ -4,6 +4,7 @@ import Controller.Controllers;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Objects;
 
 public class EntryPanel extends JPanel {
@@ -14,7 +15,13 @@ public class EntryPanel extends JPanel {
 
     public EntryPanel(String lift, int reps, int measurement, Controllers controllers){
         this.controllers = controllers;
-        this.lift = new JComboBox(controllers.liftController.getLifts());
+        String[] lifts = controllers.liftController.getLifts();
+
+        int liftIndex = Arrays.asList(lifts).indexOf(lift);
+        String swap = lifts[0];
+        lifts[0] = lift;
+        lifts[liftIndex] = swap;
+        this.lift = new JComboBox(lifts);
         this.reps = new JTextField(String.valueOf(reps), 2);
         this.measurement = new JTextField(String.valueOf(measurement), 10);
         this.add(this.lift);
