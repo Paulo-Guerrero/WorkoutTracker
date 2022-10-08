@@ -19,4 +19,16 @@ public class DbUtil {
         }
 
     }
+
+    public int executeUpdate(String query) {
+        try {
+            Connection connection = DriverManager.getConnection(connectionAddress, username, password);
+            Statement statement = connection.createStatement();
+            return statement.executeUpdate(query);
+        }catch(SQLException e){
+            System.out.println(e);
+            return -1;
+        }
+
+    }
 }

@@ -8,10 +8,13 @@ import java.util.HashMap;
 import java.util.List;
 
 public class UserModel {
-
     private DbUtil db = new DbUtil();
-    public void addLift(LiftModel lift){
-        // TODO Error Message
+
+    public int addUser(String username, String password){
+        username = formatSQLString(username);
+        password = formatSQLString(password);
+        String query = "INSERT INTO Users VALUES(NULL, " + username + "," + password + ")";
+        return db.executeUpdate(query);
     }
 
     public String getUsername(int userId) {
@@ -19,12 +22,10 @@ public class UserModel {
 
         try {
             ResultSet resultSet = db.executeQuery(query);
-            if (resultSet == null){
-                return null;
+            if (resultSet.next()) {
+                return resultSet.getString("username");
             }
-            resultSet.next();
-            System.out.println(query);
-            return resultSet.getString("username");
+            return null;
         }catch(SQLException e){
             System.out.println(e);
             return null;
@@ -32,16 +33,15 @@ public class UserModel {
     }
 
     public String getPassword(String username) {
-        username = "\'" + username + "\'";
+        username = formatSQLString(username);
         String query = "SELECT password FROM Users WHERE username = " + username;
 
         try {
             ResultSet resultSet = db.executeQuery(query);
-            if (resultSet == null){
-                return null;
+            if (resultSet.next()){
+                return resultSet.getString("password");
             }
-            resultSet.next();
-            return resultSet.getString("password");
+            return null;
         }catch(SQLException e){
             System.out.println(e);
             return null;
@@ -49,7 +49,7 @@ public class UserModel {
     }
 
     public int getUserId(String username){
-        username = "\'" + username + "\'";
+        username = formatSQLString(username);
         String query = "SELECT userId FROM Users WHERE username = " + username;
         try {
             ResultSet resultSet = db.executeQuery(query);
@@ -59,5 +59,9 @@ public class UserModel {
             System.out.println(e);
             return -1;
         }
+    }
+
+    public String formatSQLString(String sqlString){
+        return "\'" + sqlString + "\'";
     }
 }

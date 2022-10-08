@@ -17,6 +17,13 @@ public class UserController {
         return false;
     }
 
+    public boolean signUp(String username, String password){
+        if (user.addUser(username, password) == 1){
+            this.currentUserId = user.getUserId(username);
+            return true;
+        }
+        return false;
+    }
     public String getUsername(){
         return user.getUsername(this.currentUserId);
     }
