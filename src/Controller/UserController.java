@@ -17,6 +17,10 @@ public class UserController {
         return false;
     }
 
+    public void logout(){
+        this.currentUserId = -1;
+    }
+
     public boolean signUp(String username, String password){
         if (user.addUser(username, password) == 1){
             this.currentUserId = user.getUserId(username);

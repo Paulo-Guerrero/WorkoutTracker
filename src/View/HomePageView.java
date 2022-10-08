@@ -10,6 +10,7 @@ import java.util.HashMap;
 
 public class HomePageView extends PageView implements ActionListener {
     JButton entryButton;
+    JButton logoutButton;
     UserController user = this.controllers.userController;
     private JLabel welcomeHeader;
 
@@ -30,7 +31,10 @@ public class HomePageView extends PageView implements ActionListener {
     public void renderHeader(){
         String username = user.getUsername();
         welcomeHeader = new JLabel("Welcome to your workouts, " + username);
+        logoutButton = new JButton("Logout");
+        logoutButton.addActionListener(this);
         this.panel.add(welcomeHeader);
+        this.panel.add(logoutButton);
     }
 
     public void renderHistory(){
@@ -59,6 +63,10 @@ public class HomePageView extends PageView implements ActionListener {
         if (e.getSource() == this.entryButton){
             EntriesView entriesView = new EntriesView(this.frame, this.panel, this.controllers);
             entriesView.renderView();
+        } else if (e.getSource() == this.logoutButton) {
+            user.logout();
+            LoginView loginView = new LoginView(this.frame, this.panel, this.controllers);
+            loginView.renderView();
         }
     }
 }

@@ -4,8 +4,6 @@ import Controller.DbUtil;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.List;
 
 public class UserModel {
     private DbUtil db = new DbUtil();
