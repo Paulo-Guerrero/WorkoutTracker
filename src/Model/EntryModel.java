@@ -4,6 +4,7 @@ import Controller.DbUtil;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class EntryModel {
@@ -25,7 +26,9 @@ public class EntryModel {
     }
 
     public void addBlankEntry(int userId){
-        String query = "INSERT INTO Entries(userId) VALUES(" + userId + ")";
+        String currDate = LocalDate.now().toString();
+        currDate = formatSQLString(currDate);
+        String query = "INSERT INTO Entries(creationDate, userId) VALUES(" + currDate + "," + userId + ")";
         db.executeUpdate(query);
     }
 

@@ -52,11 +52,14 @@ public class HomePageView extends PageView implements ActionListener {
 
     public void renderPersonalBests(){
         HashMap map = this.liftController.getLatestPersonalBest();
-        String lift = map.get("Lift").toString();
-        int measurement = (int) map.get("Measurement");
-
+        JLabel pbContent = new JLabel("You currently have no records");
+        if (map.size() > 0) {
+            String lift = map.get("Lift").toString();
+            int measurement = (int) map.get("Measurement");
+            pbContent = new JLabel(lift + ": " + measurement);
+        }
         JLabel pbHeader = new JLabel("Look back at your latest personal best");
-        JLabel pbContent = new JLabel(lift + ": " + measurement);
+
         this.panel.add(pbHeader);
         this.panel.add(pbContent);
     }
