@@ -33,7 +33,7 @@ public class LoginView extends PageView implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         String usernameText = username.getText();
-        String passwordText = password.getPassword().toString();
+        String passwordText = String.valueOf(password.getPassword());
         if (userController.login(usernameText, passwordText)){
             HomePageView homePageView = new HomePageView(this.frame, this.panel);
             homePageView.renderView();

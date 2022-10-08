@@ -10,7 +10,7 @@ public class UserController {
     private UserModel user = new UserModel();
     private int currentUserId;
     public boolean login(String username, String password){
-        if (user.verifyLogin(username, password)){
+        if (user.getPassword(username).equals(password)){
             this.currentUserId = user.getUserId(username);
             return true;
         }
