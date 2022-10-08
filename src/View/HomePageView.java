@@ -1,5 +1,6 @@
 package View;
 
+import Controller.Controllers;
 import Controller.UserController;
 
 import javax.swing.*;
@@ -9,11 +10,11 @@ import java.util.HashMap;
 
 public class HomePageView extends PageView implements ActionListener {
     JButton entryButton;
-    UserController user = new UserController();
+    UserController user = this.controllers.userController;
     private JLabel welcomeHeader;
 
-    public HomePageView(JFrame frame, JPanel panel) {
-        super(frame, panel);
+    public HomePageView(JFrame frame, JPanel panel, Controllers controllers) {
+        super(frame, panel, controllers);
     }
 
     public void renderView(){
@@ -56,7 +57,7 @@ public class HomePageView extends PageView implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this.entryButton){
-            EntriesView entriesView = new EntriesView(this.frame, this.panel);
+            EntriesView entriesView = new EntriesView(this.frame, this.panel, this.controllers);
             entriesView.renderView();
         }
     }

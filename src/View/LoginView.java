@@ -1,5 +1,6 @@
 package View;
 
+import Controller.Controllers;
 import Controller.UserController;
 
 import javax.swing.*;
@@ -11,10 +12,10 @@ public class LoginView extends PageView implements ActionListener {
     JPasswordField password = new JPasswordField(10);
     JButton login = new JButton("Log In");
     JLabel loginError = new JLabel("Incorrect username or password");
-    private UserController userController = new UserController();
+    private UserController user = this.controllers.userController;
 
-    public LoginView(JFrame frame, JPanel panel) {
-        super(frame, panel);
+    public LoginView(JFrame frame, JPanel panel, Controllers controllers) {
+        super(frame, panel, controllers);
     }
 
 
@@ -34,8 +35,8 @@ public class LoginView extends PageView implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         String usernameText = username.getText();
         String passwordText = String.valueOf(password.getPassword());
-        if (userController.login(usernameText, passwordText)){
-            HomePageView homePageView = new HomePageView(this.frame, this.panel);
+        if (user.login(usernameText, passwordText)){
+            HomePageView homePageView = new HomePageView(this.frame, this.panel, this.controllers);
             homePageView.renderView();
         }else{
             this.loginError.setVisible(true);

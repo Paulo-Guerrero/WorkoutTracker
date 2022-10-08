@@ -1,12 +1,14 @@
 package View;
 
+import Controller.Controllers;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class SignUpView extends PageView implements ActionListener {
-    public SignUpView(JFrame frame, JPanel panel) {
-        super(frame, panel);
+    public SignUpView(JFrame frame, JPanel panel, Controllers controllers) {
+        super(frame, panel, controllers);
     }
 
     public void renderView(){

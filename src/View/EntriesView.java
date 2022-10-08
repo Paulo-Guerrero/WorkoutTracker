@@ -1,5 +1,6 @@
 package View;
 
+import Controller.Controllers;
 import Controller.EntryController;
 import Controller.LiftController;
 
@@ -13,10 +14,10 @@ public class EntriesView extends PageView implements ActionListener {
     private JLabel dateHeader = new JLabel(LocalDate.now().toString());
     private JButton homeButton = new JButton("Home");
     private JButton saveButton = new JButton("Save Entry");
-    private LiftController liftController = new LiftController();
+    private LiftController lift = this.controllers.liftController;
 
-    public EntriesView(JFrame frame, JPanel panel) {
-        super(frame, panel);
+    public EntriesView(JFrame frame, JPanel panel, Controllers controllers) {
+        super(frame, panel, controllers);
     }
 
     public void renderView(){
@@ -38,12 +39,12 @@ public class EntriesView extends PageView implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == addRecord){
-            this.panel.add(new JComboBox(liftController.getLifts()));
+            this.panel.add(new JComboBox(lift.getLifts()));
             this.panel.add(new JTextField(2));
             this.panel.add(new JTextField(10));
             this.panel.revalidate();
         } else if (e.getSource() == homeButton){
-            HomePageView homePageView = new HomePageView(this.frame, this.panel);
+            HomePageView homePageView = new HomePageView(this.frame, this.panel, this.controllers);
             homePageView.renderView();
         }else if (e.getSource() == saveButton){
             EntryController entryController = new EntryController();

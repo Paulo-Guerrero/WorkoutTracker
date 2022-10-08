@@ -1,5 +1,7 @@
 package View;
 
+import Controller.Controllers;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -8,6 +10,7 @@ import java.awt.event.ActionListener;
 public class StartUpView implements ActionListener {
     private JFrame frame = new JFrame();
     private JPanel panel = new JPanel();
+    private Controllers controllers = new Controllers();
     private JButton signupButton = new JButton("Sign Up");
     private JButton loginButton = new JButton("Log In");
     
@@ -30,10 +33,10 @@ public class StartUpView implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == signupButton) {
-            SignUpView signUpView = new SignUpView(this.frame, this.panel);
+            SignUpView signUpView = new SignUpView(this.frame, this.panel, this.controllers);
             signUpView.renderView();
         } else if (e.getSource() == loginButton) {
-            LoginView loginView = new LoginView(this.frame, this.panel);
+            LoginView loginView = new LoginView(this.frame, this.panel, this.controllers);
             loginView.renderView();
         }
     }
