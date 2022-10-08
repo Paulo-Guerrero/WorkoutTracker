@@ -40,7 +40,8 @@ public class HomePageView extends PageView implements ActionListener {
     }
 
     public void renderHistory(){
-
+        this.panel.add(new HistoryGraph(controllers));
+        this.panel.revalidate();
     }
 
     public void renderEntryMenu(){

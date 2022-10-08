@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="caec9342-4b6c-450e-be45-78a3772597ab" name="Changes" comment="Connected LiftModel to db">
+      <change afterPath="$PROJECT_DIR$/lib/JChart.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/HistoryGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LiftController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/LiftModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/LiftModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WorkoutTracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WorkoutTracker.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/HomePageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/HomePageView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,24 +34,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PauLy G/IdeaProjects/WorkoutTracker/lib/mysql-connector-java-8.0.30.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/PauLy G/IdeaProjects/WorkoutTracker/lib/JChart.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlserver&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlserver"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\PauLy G\IdeaProjects\WorkoutTracker\lib" />
@@ -89,7 +89,7 @@
       <workItem from="1665011378371" duration="604000" />
       <workItem from="1665184642409" duration="5254000" />
       <workItem from="1665195802439" duration="8153000" />
-      <workItem from="1665242639800" duration="2042000" />
+      <workItem from="1665242639800" duration="2814000" />
     </task>
     <task id="LOCAL-00001" summary="Miscellaneous creation files">
       <created>1664914525051</created>
@@ -203,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665203954922</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Connected LiftModel to db">
+      <created>1665244701280</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665244701280</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
