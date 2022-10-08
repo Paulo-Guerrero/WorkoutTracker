@@ -61,6 +61,7 @@ public class HomePageView extends PageView implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this.entryButton){
+            controllers.entryController.addBlankEntry();
             EntriesView entriesView = new EntriesView(this.frame, this.panel, this.controllers);
             entriesView.renderView();
         } else if (e.getSource() == this.logoutButton) {

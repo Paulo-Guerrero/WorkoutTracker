@@ -9,6 +9,9 @@ import java.util.List;
 public class UserController {
     private UserModel user = new UserModel();
     private int currentUserId;
+
+    public UserController(Controllers controllers){};
+
     public boolean login(String username, String password){
         if (user.getPassword(username).equals(password)){
             this.currentUserId = user.getUserId(username);
@@ -31,6 +34,8 @@ public class UserController {
     public String getUsername(){
         return user.getUsername(this.currentUserId);
     }
+
+    public int getCurrentUserId(){return this.currentUserId;}
 
     public HashMap<String, Object> getLatestPersonalBest(){
         HashMap map = new HashMap<>();
